@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">	
+	<script src="js/jssor.slider.min.js" type="text/javascript"></script>
+    <title>Creative Frames</title>
+	<link rel="stylesheet" href="css/creativeframes.css">
+	<script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideWidth: 900,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1200;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+  </head>
+  <body>
+  <div class="container-fluid" style="padding-left:0; padding-right:0;">
+  <img src="images/mainbg.jpg" width="1366" height="700" class="img-fluid mainbg">
+  
+	  <div class="container mainbg1">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#"><img src="images/logo.png" width="400" class="img-fluid" alt=""></a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarText">
+					<ul class="navbar-nav mr-auto">
+					  <li class="nav-item active">
+						<a class="nav-link" href="#">Workshops</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Photo Stories</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Destinations</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Travelouge</a>
+					  </li>
+					</ul>				
+				  </div>		  
+			</nav>
+		</header>		
+	</div>
+		<div class="container toptext">
+			<div class="row">
+					<div class="col-sm-12 topcontent">
+						<h1>Dal Lake, Jammu & Kashmir</h1>
+						<p> Captured by Prashant Mishra</p>
+						<a class="btn btn-outline-light" href="#" role="button">Learn more</a>
+					</div>
+			</div>
+		</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 midcontainer">
+				<h1>Introducing Creative Frames India</h1>
+				<p>A land of remarkable diversity – from ancient traditions and artistic heritage to magnificent landscapes and culinary creations – India will ignite your curiosity, shake your senses and warm your soul.</p>
+			</div>
+		</div>
+	</div>
+	<!--Slider -->
+	<div class="container-fluid slidecontainer">
+		<div class="row">	
+		<h1>Photo Stories</h1>		
+		<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1200px;height:380px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1200px;height:380px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="images/slider1.png" width="900" class="img-fluid" />
+            </div>
+            <div>
+                <img data-u="image" src="images/slider1.png" width="900" class="img-fluid" />
+            </div>
+            <div>
+                <img data-u="image" src="images/slider1.png" width="900" class="img-fluid" />
+            </div>      
+           
+        </div>
+		<!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:35px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <d
+		iv data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:35px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+	    <script type="text/javascript">jssor_1_slider_init();</script>
+		</div>
+	</div>
+	<!--Slider -->
+	<div class="container photocontainer">
+	<h1>Photo Tips for everyone</h1>
+		<div class="row">
+			
+			<div class="col-md-4 imgbox">
+				<img src="images/imgbox1.png" width="300" class="img-fluid">
+				<div class="textbox">
+					<strong>Teach yourself to recognize good light</strong>
+					<p>I’m putting this up front because I can’t emphasize it enough, and it’s something you can practice every minute of the day, with or without a camera.</p>
+				</div>						
+			</div>
+			
+			<div class="col-md-4 imgbox">
+				<img src="images/imgbox1.png" width="300" class="img-fluid">
+				<div class="textbox">
+					<strong>Compose your shot</strong>
+					<p>There are many schools of thought on how to compose a photograph, but a solid basic principle to start with is the good old ‘rule of thirds’.</p>
+				</div>						
+			</div>
+			
+			<div class="col-md-4 imgbox">
+				<img src="images/imgbox1.png" width="300" class="img-fluid">
+				<div class="textbox">
+					<strong>Content is King</strong>
+					<p>It’s almost a cliche at this point but it’s as true as ever. You have to ask yourself what you’re shooting. What is your subject?</p>
+				</div>						
+			</div>
+		</div>
+	</div>
+	
+	<div class="container month">
+		<div class="row">
+			<h1>Creative City of the Month</h1>
+			<div class="col-md-12 monthcontainer">
+				<img src="images/month.png" width="1000" class="img-fluid">
+				<div class="monthbox">
+					<h2>Varanasi</h2>
+					<span>is sacred, soulful, spectacular</span>
+				</div>
+				<div class="col-lg-8 monthdetails"><p>Varanasi is the India of your imagination. One of the most colourful and fascinating places on earth, surprises abound around every corner.</p></div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="container footbox">
+		<div class="row">
+		<div class="col-md-4"><img src="images/logobottom.png" width="343" class="img-fluid btmlogo"></div>
+		<div class="col-md-5 footmidbox">
+			<ul class="nav">
+			  <li class="nav-item">
+				<a class="nav-link" href="#">About us</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Contact Us</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Terms & Conditions</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Privacy Policy</a>
+			  </li>
+			</ul>
+			<span class="copyright">© 2018 Creative Frames India. All rights reserved.</span>
+		</div>
+		<div class="col-md-3 footsocial">
+		<ul>
+			<li><a href="#"><img src="images/socialfb.png" class="img-fluid" width="40"></a></li>
+			<li><a href="#"><img src="images/socialinsta.png" class="img-fluid" width="40"></a></li>
+			<li><a href="#"><img src="images/socialutube.png" class="img-fluid" width="40"></a></li>
+		</ul>
+		</div>
+		</div>
+	</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
